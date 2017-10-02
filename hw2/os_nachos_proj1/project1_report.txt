@@ -1,0 +1,24 @@
+Difference:
+
+Output3: Thread 2 first do calculation, global update and end. 
+	 Then Thread 1. 
+Output4: Thread 1 first do calculation, global update and end. 
+	 Then Thread 2.
+Output4: Thread1 first do calculation. Then, Thread 2 do calculation,
+	 global update and end. Last, Thread 1 do global update and end.
+
+
+Reason:
+
+Output3: Thread 2 call th1->Suspend(); which makes Thread 1 suspend. After
+	 Thread 2 has done all his works, Thread 2 call th1->Resume();
+	 Thread 1 restart to do his work. 
+	 Note that, two threads are parallel at first, so Thread 2 can be
+	 fast enough to stop Thread 1.
+Output4: The same reason with Output3 but with a different order.
+Output5: Thread 1 first calculation, because it is the first thread. Then Thread 1 calls
+	 currentThread->Yield(); which means it relinquish the CPU if any other thread
+	 is ready to run. Therefore, Thread 1 go to the end of the ready list and has a 
+	 low priority. Thread 2 do calculation, global update and end. After Thread 2 done,
+	 CPU execute Thread 1, which is in ready list before. Thread 1 do global update 
+	 and end.

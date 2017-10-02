@@ -1,0 +1,19 @@
+Hello, my name is Thread1
+my priority is 10
+Thread1 will perform calculation for 60000 times
+Hello, my name is Thread2
+my priority is 10
+Thread2 will perform calculation for 70000 times
+Thread1 ends
+Thread2 ends
+No threads ready or runnable, and no pending interrupts.
+Assuming the program completed.
+Machine halting!
+
+Ticks: total 70, idle 0, system 70, user 0
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0
+
+Cleaning up...
