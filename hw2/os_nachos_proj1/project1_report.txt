@@ -4,7 +4,7 @@ Output3: Thread 2 first do calculation, global update and end.
 	 Then Thread 1. 
 Output4: Thread 1 first do calculation, global update and end. 
 	 Then Thread 2.
-Output4: Thread1 first do calculation. Then, Thread 2 do calculation,
+Output5: Thread1 first do calculation. Then, Thread 2 do calculation,
 	 global update and end. Last, Thread 1 do global update and end.
 
 
