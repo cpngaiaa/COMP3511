@@ -1,0 +1,45 @@
+1. 
+				FCFS	SJF	NP_P	P
+1) Average waiting time		18.6	12.2	12.2	16.4
+2) Average response time	18.6	12.2	12.2	7.2
+3) Average turn-around time	32.6	26.2	26.2	30.4
+
+
+2.
+Difference: SJF has shorter time than FCFS in all three aspects.
+
+In FCFS and SJF, Average waiting time and Average response time always are the
+same. The difference between Average waiting time and Average turn-around time 
+is Average running time, which is independent with scheduling algorithm. 
+Hence, we only need consider Average waiting time.
+
+SJF: 
+Pro: Have short Average waiting time
+
+FCFS:
+cons: Have long Average waiting time
+
+The reason is taught in lecture.
+
+
+3.
+Difference: NP_P has shorter Average waiting time and longer Average response
+time than P.
+
+The difference between Average waiting time and Average turn-around time
+is Average running time, which is independent with scheduling algorithm.
+Hence, we only need consider Average waiting time and Average response time.
+
+NP_P  
+Pro: Have short Average waiting time
+cons: Have long Average response time 
+
+P
+Pro: Have long Average waiting time
+cons: Have short Average response time
+
+The reason is P may be preemptive low Priority process, which lets low Priority 
+process wait indefinitely. This will make longer Average waiting time.
+On the other hand, P can be preemptive, so it can let high Priority process
+to execute immediately. This will make shorter Average response time.
+

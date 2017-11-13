@@ -1,0 +1,104 @@
+Shortest job first scheduling
+Starting at Elapesd ticks: total 0
+Queuing threads.
+Queuing thread threadA at Time 0, priority 4, willing to burst 17 ticks
+Switching from thread "main" to thread "threadA"
+threadA, Starting Burst of 17 ticks. Elapesd ticks: total 0
+threadA, Still 16 to go. Elapesd ticks: total 1
+threadA, Still 15 to go. Elapesd ticks: total 2
+threadA, Still 14 to go. Elapesd ticks: total 3
+threadA, Still 13 to go. Elapesd ticks: total 4
+threadA, Still 12 to go. Elapesd ticks: total 5
+threadA, Still 11 to go. Elapesd ticks: total 6
+threadA, Still 10 to go. Elapesd ticks: total 7
+threadA, Still 9 to go. Elapesd ticks: total 8
+threadA, Still 8 to go. Elapesd ticks: total 9
+Queuing thread threadB at Time 10, priority 5, willing to burst 10 ticks
+threadA, Still 7 to go. Elapesd ticks: total 10
+threadA, Still 6 to go. Elapesd ticks: total 11
+threadA, Still 5 to go. Elapesd ticks: total 12
+Queuing thread threadC at Time 13, priority 1, willing to burst 25 ticks
+threadA, Still 4 to go. Elapesd ticks: total 13
+threadA, Still 3 to go. Elapesd ticks: total 14
+threadA, Still 2 to go. Elapesd ticks: total 15
+threadA, Still 1 to go. Elapesd ticks: total 16
+threadA, Still 0 to go. Elapesd ticks: total 17
+threadA, Done with burst. Elapesd ticks: total 17
+Switching from thread "threadA" to thread "threadB"
+threadB, Starting Burst of 10 ticks. Elapesd ticks: total 17
+Queuing thread threadD at Time 18, priority 10, willing to burst 6 ticks
+threadB, Still 9 to go. Elapesd ticks: total 18
+threadB, Still 8 to go. Elapesd ticks: total 19
+Queuing thread threadE at Time 20, priority 9, willing to burst 12 ticks
+threadB, Still 7 to go. Elapesd ticks: total 20
+threadB, Still 6 to go. Elapesd ticks: total 21
+threadB, Still 5 to go. Elapesd ticks: total 22
+threadB, Still 4 to go. Elapesd ticks: total 23
+threadB, Still 3 to go. Elapesd ticks: total 24
+threadB, Still 2 to go. Elapesd ticks: total 25
+threadB, Still 1 to go. Elapesd ticks: total 26
+threadB, Still 0 to go. Elapesd ticks: total 27
+threadB, Done with burst. Elapesd ticks: total 27
+Switching from thread "threadB" to thread "threadD"
+threadD, Starting Burst of 6 ticks. Elapesd ticks: total 27
+threadD, Still 5 to go. Elapesd ticks: total 28
+threadD, Still 4 to go. Elapesd ticks: total 29
+threadD, Still 3 to go. Elapesd ticks: total 30
+threadD, Still 2 to go. Elapesd ticks: total 31
+threadD, Still 1 to go. Elapesd ticks: total 32
+threadD, Still 0 to go. Elapesd ticks: total 33
+threadD, Done with burst. Elapesd ticks: total 33
+Switching from thread "threadD" to thread "threadE"
+threadE, Starting Burst of 12 ticks. Elapesd ticks: total 33
+threadE, Still 11 to go. Elapesd ticks: total 34
+threadE, Still 10 to go. Elapesd ticks: total 35
+threadE, Still 9 to go. Elapesd ticks: total 36
+threadE, Still 8 to go. Elapesd ticks: total 37
+threadE, Still 7 to go. Elapesd ticks: total 38
+threadE, Still 6 to go. Elapesd ticks: total 39
+threadE, Still 5 to go. Elapesd ticks: total 40
+threadE, Still 4 to go. Elapesd ticks: total 41
+threadE, Still 3 to go. Elapesd ticks: total 42
+threadE, Still 2 to go. Elapesd ticks: total 43
+threadE, Still 1 to go. Elapesd ticks: total 44
+threadE, Still 0 to go. Elapesd ticks: total 45
+threadE, Done with burst. Elapesd ticks: total 45
+Switching from thread "threadE" to thread "threadC"
+threadC, Starting Burst of 25 ticks. Elapesd ticks: total 45
+threadC, Still 24 to go. Elapesd ticks: total 46
+threadC, Still 23 to go. Elapesd ticks: total 47
+threadC, Still 22 to go. Elapesd ticks: total 48
+threadC, Still 21 to go. Elapesd ticks: total 49
+threadC, Still 20 to go. Elapesd ticks: total 50
+threadC, Still 19 to go. Elapesd ticks: total 51
+threadC, Still 18 to go. Elapesd ticks: total 52
+threadC, Still 17 to go. Elapesd ticks: total 53
+threadC, Still 16 to go. Elapesd ticks: total 54
+threadC, Still 15 to go. Elapesd ticks: total 55
+threadC, Still 14 to go. Elapesd ticks: total 56
+threadC, Still 13 to go. Elapesd ticks: total 57
+threadC, Still 12 to go. Elapesd ticks: total 58
+threadC, Still 11 to go. Elapesd ticks: total 59
+threadC, Still 10 to go. Elapesd ticks: total 60
+threadC, Still 9 to go. Elapesd ticks: total 61
+threadC, Still 8 to go. Elapesd ticks: total 62
+threadC, Still 7 to go. Elapesd ticks: total 63
+threadC, Still 6 to go. Elapesd ticks: total 64
+threadC, Still 5 to go. Elapesd ticks: total 65
+threadC, Still 4 to go. Elapesd ticks: total 66
+threadC, Still 3 to go. Elapesd ticks: total 67
+threadC, Still 2 to go. Elapesd ticks: total 68
+threadC, Still 1 to go. Elapesd ticks: total 69
+threadC, Still 0 to go. Elapesd ticks: total 70
+threadC, Done with burst. Elapesd ticks: total 70
+No threads ready or runnable, and no pending interrupts.
+Assuming the program completed.
+Machine halting!
+
+Ticks: total 70, idle 0, system 70, user 0
+Disk I/O: reads 0, writes 0
+Console I/O: reads 0, writes 0
+Paging: faults 0
+Network I/O: packets received 0, sent 0
+
+Cleaning up...
