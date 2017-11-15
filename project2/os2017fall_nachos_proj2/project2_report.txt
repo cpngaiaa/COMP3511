@@ -1,4 +1,14 @@
+SHI Zhenmei 20329335 zshiad@connect.ust.hk
+
+Note that  NP_P: NP_Priority  P: P_Priority
+
+
 1. 
+				A  B  C  D  E
+Burst Time		17 10 25 6  12  
+Priority		4  5  1  10 9
+Arrival Time	0  10 13 18 20
+
 				FCFS	SJF	NP_P	P
 1) Average waiting time		18.6	12.2	12.2	16.4
 2) Average response time	18.6	12.2	12.2	7.2
@@ -14,12 +24,13 @@ is Average running time, which is independent with scheduling algorithm.
 Hence, we only need consider Average waiting time.
 
 SJF: 
-Pro: Have short Average waiting time
+Pro: Have short Average waiting time.
+Cons: SJF takes at least O(logn) time complexity(binary search) or O(n) time(scanning) 
+to do the insertion and have the problem of starvation.
 
 FCFS:
-cons: Have long Average waiting time
-
-The reason is taught in lecture.
+Pros: Easy to implement and take constant time to do the queing.
+cons: Have long Average waiting time.
 
 
 3.
@@ -32,11 +43,12 @@ Hence, we only need consider Average waiting time and Average response time.
 
 NP_P  
 Pro: Have short Average waiting time
-cons: Have long Average response time 
+cons: Have long Average response time and have the problem of starvation.
 
 P
-Pro: Have long Average waiting time
-cons: Have short Average response time
+Pro: Have short Average response time, which is useful for dealing with emergency tasks 
+and should be good at processing responsive programs.
+cons: Have long Average waiting time and have the problem of starvation more serious.
 
 The reason is P may be preemptive low Priority process, which lets low Priority 
 process wait indefinitely. This will make longer Average waiting time.
