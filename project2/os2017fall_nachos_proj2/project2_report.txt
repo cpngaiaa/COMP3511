@@ -4,9 +4,9 @@ Note that  NP_P: NP_Priority  P: P_Priority
 
 
 1. 
-				A  B  C  D  E
-Burst Time		17 10 25 6  12  
-Priority		4  5  1  10 9
+		A  B  C  D  E
+Burst Time	17 10 25 6  12  
+Priority	4  5  1  10 9
 Arrival Time	0  10 13 18 20
 
 				FCFS	SJF	NP_P	P
