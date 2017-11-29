@@ -26,7 +26,8 @@ Hence, we only need consider Average waiting time.
 SJF: 
 Pro: Have short Average waiting time.
 Cons: SJF takes at least O(logn) time complexity(binary search) or O(n) time(scanning) 
-to do the insertion and have the problem of starvation.
+to do the insertion and have the problem of starvation and it is hard to know burst time 
+of a process exactly in a real system.
 
 FCFS:
 Pros: Easy to implement and take constant time to do the queing.
@@ -42,13 +43,14 @@ is Average running time, which is independent with scheduling algorithm.
 Hence, we only need consider Average waiting time and Average response time.
 
 NP_P  
-Pro: Have short Average waiting time
+Pro: Have short Average waiting time and have low overhead for context switch
 cons: Have long Average response time and have the problem of starvation.
 
 P
 Pro: Have short Average response time, which is useful for dealing with emergency tasks 
 and should be good at processing responsive programs.
 cons: Have long Average waiting time and have the problem of starvation more serious.
+Have high overhead for context switch
 
 The reason is P may be preemptive low Priority process, which lets low Priority 
 process wait indefinitely. This will make longer Average waiting time.
